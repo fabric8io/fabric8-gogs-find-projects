@@ -17,8 +17,8 @@
 package io.fabric8.devops.projects.finder.gogs;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
+import io.fabric8.repo.git.GitRepoClient;
 import io.fabric8.repo.git.RepositoryDTO;
-import io.fabric8.repo.git.resteasy.ResteasyGitRepoClient;
 import io.fabric8.utils.Strings;
 import io.fabric8.utils.Systems;
 import org.slf4j.Logger;
@@ -65,7 +65,7 @@ public class Main {
 
             LOG.info("Logging into gogs at address: " + address + " with user " + username);
 
-            ResteasyGitRepoClient client = ResteasyGitRepoClient.createWithContextClassLoader(address, username, password);
+            GitRepoClient client = new GitRepoClient(address, username, password);
             List<RepositoryDTO> repos = client.listRepositories();
             System.out.println(JsonHelper.toJson(repos));
         } catch (JsonProcessingException e) {
