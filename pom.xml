@@ -38,7 +38,7 @@
 
     <docker.from>fabric8/java</docker.from>
 
-    <docker.image>fabric8/fabric8-gogs-find-projects:${project.version}</docker.image>
+    <docker.image>docker.io/fabric8/fabric8-gogs-find-projects:${project.version}</docker.image>
     <docker.assemblyDescriptorRef>artifact-with-dependencies</docker.assemblyDescriptorRef>
     <docker.env.MAIN>io.fabric8.devops.projects.finder.gogs.Main</docker.env.MAIN>
     <docker.env.JOLOKIA_OFF>true</docker.env.JOLOKIA_OFF>
@@ -59,7 +59,6 @@
     <docker.registry>registry.hub.docker.com</docker.registry>
 -->
     <!-- docker.registry>docker.io</docker.registry -->
-    <docker.registryPrefix>docker.io/</docker.registryPrefix>
     <!-- docker.maven.plugin.version>0.13.1-SNAPSHOT</docker.maven.plugin.version -->
     <docker.maven.plugin.version>0.13.0</docker.maven.plugin.version>
     <maven.require.version>3.1.1</maven.require.version>
