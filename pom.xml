@@ -60,7 +60,7 @@
 -->
     <!-- docker.registry>docker.io</docker.registry -->
     <!-- docker.maven.plugin.version>0.13.1-SNAPSHOT</docker.maven.plugin.version -->
-    <docker.maven.plugin.version>0.13.1.1-SNAPSHOT</docker.maven.plugin.version>
+    <docker.maven.plugin.version>0.13.1-SNAPSHOT</docker.maven.plugin.version>
     <maven.require.version>3.1.1</maven.require.version>
     <maven.enforcer.plugin.version>1.3.1</maven.enforcer.plugin.version>
   </properties>
@@ -114,7 +114,13 @@
     </snapshotRepository>
   </distributionManagement>
 
-
+  <pluginRepositories>
+    <pluginRepository>
+      <id>oss-sonatype-snapshots</id>
+      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+    </pluginRepository>
+  </pluginRepositories>
+  
   <dependencyManagement>
     <dependencies>
       <dependency>
