@@ -194,7 +194,9 @@
         <version>2.5</version>
         <configuration>
           <releaseProfiles>docker-push</releaseProfiles>
+<!--
           <arguments>-Ddocker.username=${docker.username} -Ddocker.password=${docker.password}</arguments>
+-->
         </configuration>
       </plugin>
       <plugin>
