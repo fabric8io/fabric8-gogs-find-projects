@@ -38,7 +38,7 @@
 
     <docker.from>fabric8/java</docker.from>
 
-    <docker.image>docker.io/fabric8/fabric8-gogs-find-projects:${project.version}</docker.image>
+    <docker.image>index.docker.io/fabric8/fabric8-gogs-find-projects:${project.version}</docker.image>
     <docker.assemblyDescriptorRef>artifact-with-dependencies</docker.assemblyDescriptorRef>
     <docker.env.MAIN>io.fabric8.devops.projects.finder.gogs.Main</docker.env.MAIN>
     <docker.env.JOLOKIA_OFF>true</docker.env.JOLOKIA_OFF>
