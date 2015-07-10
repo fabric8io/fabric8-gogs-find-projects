@@ -27,7 +27,7 @@
 
   <groupId>io.fabric8.devops.find-projects</groupId>
   <artifactId>fabric8-gogs-find-projects</artifactId>
-  <version>1.5-SNAPSHOT</version>
+  <version>1.5</version>
   <packaging>jar</packaging>
 
   <name>Fabric8 :: DevOps :: Gogs Find Projects</name>
@@ -40,7 +40,7 @@
          (I.e. here use '-Df8.docker.registryPrefix=docker.io/' from the outside when running on fedora
          in order to nail down the registry name
          -->
-    <f8.docker.registryPrefix></f8.docker.registryPrefix>
+    <f8.docker.registryPrefix />
     <f8.docker.mainClass>io.fabric8.devops.projects.finder.gogs.Main</f8.docker.mainClass>
     <f8.docker.from>fabric8/java</f8.docker.from>
     <f8.docker.user>fabric8</f8.docker.user>
@@ -83,7 +83,7 @@
       <connection>scm:git:git@github.com:fabric8io/fabric8-gogs-find-projects.git</connection>
       <developerConnection>scm:git:git@github.com:fabric8io/fabric8-gogs-find-projects.git</developerConnection>
       <url>http://github.com/fabric8io/fabric8-gogs-find-projects</url>
-      <tag>fabric8-gogs-find-projects-1.6</tag>
+      <tag>fabric8-gogs-find-projects-1.5</tag>
   </scm>
 
   <distributionManagement>
