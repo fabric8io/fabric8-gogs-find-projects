@@ -59,7 +59,7 @@
     <docker.registry>registry.hub.docker.com</docker.registry>
 -->
     <!-- docker.registry>docker.io</docker.registry -->
-    <!-- docker.registryPrefix>docker.io/</docker.registryPrefix -->
+    <docker.registryPrefix>docker.io/</docker.registryPrefix>
     <!-- docker.maven.plugin.version>0.13.1-SNAPSHOT</docker.maven.plugin.version -->
     <docker.maven.plugin.version>0.13.0</docker.maven.plugin.version>
     <maven.require.version>3.1.1</maven.require.version>
